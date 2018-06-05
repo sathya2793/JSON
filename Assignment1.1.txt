@@ -1,0 +1,21 @@
+Imagine you are creating a JSON data store for a Ecommerce platform like flipkart.com or amazon.in.
+Create a JSON to show what fields you will choose and what type of data (string/object/array)
+would you want to store in those field.
+
+-Created a variable electronics of two category list of 10 SmartPhone Product, 3 Televisions for a Ecommerce platform.
+
+-This Televisions category includes brandName, modelName , warranty, price, color , size.
+
+-This smartPhone category includes brandName, modelName , warranty, price , os , color , weight.
+
+-stored as dataSet.js
+
+-And then html file created below function are used
+
+-First function showCategory it's will show the only category list
+
+-Second function showCategoryList it's will show the all the category in particular list
+
+-Third function smartPhonePrice it's will show the only smartPhone price is less than 30000
+
+-and then display all the value in the dataSet

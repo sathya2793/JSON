@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <h2>Please check the console for the output</h2>
+</head>
+
+<body>
+  <script type="text/javascript" src="dataSet.js"></script>
+
+  <script>
+
+    //electronics value stored in dataSet.js
+
+    var data = JSON.parse(electronics); //convert text into a JavaScript object
+    console.log("Display all the value:");
+    console.log(data); //this will display all the electronics value
+
+    //This function is used to show only category
+
+    function showCategory() {
+      var categoryName = " ";
+      for (var a in data) {
+        categoryName += a + " "; //this store all the category
+      }
+      return categoryName;
+    }
+
+    console.log("show the category list:"+showCategory()); //output : smartPhone Televisions
+
+    var categorySmartPhone = data.smartPhone[0];
+
+    console.log("show the smartphone category list:"+categorySmartPhone); //this will display all the smartPhone category value
+
+    var categoryTelevisions = data.Televisions[0];
+
+    console.log("show the Televisions category list:"+categoryTelevisions); //this will display all the Televisions category value
+
+    // This function will show all the company name of a particular category.
+
+    function showCategoryList(companyName) {
+      var list = " ";
+      for (x in companyName) {
+        list += x + " "; //this will store all the company name
+      }
+      return list;
+    }
+
+    console.log("shown the smartphone company name:"+showCategoryList(categorySmartPhone)); //output :oneplus samsung sony Lava Apple lg vivo nokia
+
+    console.log("shown the Televisions company name:"+showCategoryList(categoryTelevisions)); //output :samsung sony
+
+    var companyName = "samsung"; //user can select any company name
+
+    //this function will show all the product details of the particular company
+
+    function showProductList(category, company) {
+      for (x in category) {
+        if (x == company) {
+          console.log(category[x]); // this will executed only matching company
+        }
+      }
+    }
+
+    showProductList(categorySmartPhone, companyName); //this will display all samsung product in smartPhone category
+
+    showProductList(categoryTelevisions, companyName); //this will display all samsung product in Televisions category
+
+    //this function display smartPhone price less than 30000
+
+    function smartPhonePrice(category) {
+      for (x in category) {
+        var object = category[x];
+        for (var i = 0; i < object.length; i++) {
+          if (object[i].price < 30000) {
+            console.log(object[i]); //this will shown only product price is less than 30000
+          }
+        }
+      }
+    }
+
+    smartPhonePrice(categorySmartPhone); //call smartPhoneprice function
+  </script>
+</body>
+
+</html>

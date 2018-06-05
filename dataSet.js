@@ -1,0 +1,131 @@
+var electronics=`{
+  "Televisions": [
+    {
+      "samsung": [
+        {
+          "color": "black",
+          "modelName": "series 5",
+          "price": 37900,
+          "size": "43 inches",
+          "warranty": "3 years"
+        },
+        {
+          "color": "white",
+          "modelName": "series 6",
+          "price": 55900,
+          "size": "43 inches",
+          "warranty": "3 years"
+        }
+      ],
+      "sony": [
+        {
+          "color": "black",
+          "modelName": "Bravia klv-32w622f",
+          "price": 32990,
+          "size": "32 inches",
+          "warranty": "5 years"
+        }
+      ]
+    }
+  ],
+  "smartPhone": [
+    {
+      "Apple": [
+        {
+          "color": "pink",
+          "modelName": "iphone 8",
+          "os": "ios",
+          "price": 64900,
+          "warranty": "1 years",
+          "weight": "127 grams"
+        }
+      ],
+      "Lava": [
+        {
+          "color": "gold",
+          "modelName": "z50",
+          "os": "android",
+          "price": 4999,
+          "warranty": "2 years",
+          "weight": "111 grams"
+        }
+      ],
+      "lg": [
+        {
+          "color": "grey",
+          "modelName": "v30+",
+          "os": "android",
+          "price": 44990,
+          "warranty": "1 years",
+          "weight": "142 grams"
+        }
+      ],
+      "nokia": [
+        {
+          "color": "Blue",
+          "modelName": "nokia 6.2",
+          "os": "android",
+          "price": 18999,
+          "warranty": "1 years",
+          "weight": "115 grams"
+        }
+      ],
+      "oneplus": [
+        {
+          "color": "black",
+          "modelName": "oneplus 6",
+          "os": "android",
+          "price": 34999,
+          "warranty": "1 years",
+          "weight": "123 grams"
+        },
+        {
+          "color": "grey",
+          "modelName": "oneplus 3",
+          "os": "android",
+          "price": 27999,
+          "warranty": "1 years",
+          "weight": "159 grams"
+        }
+      ],
+      "samsung": [
+        {
+          "color": "black",
+          "modelName": "s9+",
+          "os": "android",
+          "price": 64900,
+          "warranty": "2 years",
+          "weight": "162 grams"
+        },
+        {
+          "color": "white",
+          "modelName": "a6",
+          "os": "android",
+          "price": 21900,
+          "warranty": "1 years",
+          "weight": "140 grams"
+        }
+      ],
+      "sony": [
+        {
+          "color": "black",
+          "modelName": "xperia xz premium",
+          "os": "android",
+          "price": 51990,
+          "warranty": "2 years",
+          "weight": "152 grams"
+        }
+      ],
+      "vivo": [
+        {
+          "color": "black",
+          "modelName": "v9",
+          "os": "android",
+          "price": 22990,
+          "warranty": "1 years",
+          "weight": "129 grams"
+        }
+      ]
+    }
+  ]
+}`;
